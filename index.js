@@ -47,3 +47,16 @@ function name() {
           document.write(jersey)
         
         }
+function rating() {
+    let output='';
+    let rating = prompt("Scale of 1-5 how good are these players?")
+
+    for (let i = 0; i < rating; i++) {
+        output +="<img src='images/vikinghead.jpg' />";
+    }
+
+    document.write(output);
+    
+    
+
+}
