@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <head>
     <link rel="stylesheet" href="style.css">
+    <script src="index.js"></script>
 </head>
 <body>
     <header>
@@ -14,13 +15,12 @@
             <li>Tom Brady</li>
         </ol>
         <script>
-            let name = prompt("Welcome to my website, what is your name?");
-            document.write("It is a pleasure to meet you "+ name);
+            hello()
+            players()
         </script>
         <section>
             <ol>
                 <ul>
-                    
                     <div class="player">
                         <img src="https://minnesota.cbslocal.com/wp-content/uploads/sites/15909630/2010/10/72571025_10.jpg?w=1024&h=576&crop=1" alt="Carter" style="width:100%"/> Photo: Andy Lyons/Allsport
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum..</p> 
@@ -36,21 +36,6 @@
                 </ul>
             </ol>        
         </section>
-        <script>
-            let favorite = prompt("Out of the three choices availble, which player do you like best?");
-            document.write("Your choice is: " + favorite);
-            if ( favorite === "Chris Carter") {
-                document.write("That's a great choice!");   
-            }
-            else if (favorite === "Randy Moss") {
-                document.write("Not bad, but you could pick better.");
-            }
-            else if (favorite === "Tom Brady") {
-                document.write("He's alright, for a quarterback.");
-            } else { 
-            document.write("You better pick someone else");
-            }
-        </script>
     </main>
     <footer>
         <p>&copy;Dean Weiss</p>
