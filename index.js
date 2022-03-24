@@ -17,4 +17,33 @@ function players() {
         document.write("You better pick someone else");
             }
         }
+function color() {   
+        let number = 1;
+        console.log(number++)
+
+        alert("I want to to know your favorite 2 colors for a football team")
+        for( let i = 1 ; i <= 2; i++ ) {
+            let color = prompt("Your favorite colors #" + i);
+            document.write(color)
+        }
+    }
+function name() {     
+        let nameCorrect = false;
+        let jerseyCorrect = false;
+        let jersey;
+
+        while( ! nameCorrect ) {
+          let name = prompt("Who is the best player on this list?");
+          if ( name.toLowerCase() === "chris carter" ) { 
+              nameCorrect = true;
+              document.write(name) 
+            }
+        }
         
+        do {
+          jersey = prompt('What is his jersey number for the MN Vikings?');
+          if ( parseInt(jersey) === 80 ) { jerseyCorrect = true; }
+          } while ( jerseyCorrect != true )
+          document.write(jersey)
+        
+        }
